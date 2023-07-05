@@ -1,61 +1,42 @@
+/* styles.css */
 
+body {
+  font-family: Arial, sans-serif;
+}
 
-form {
-  width: 400px;
-  padding: 40px 10px;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%,-50%);
-  background-color: #000;
+.container {
+  width: 300px;
+  margin: 0 auto;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background-color: #f2f2f2;
+}
+
+.container h2 {
   text-align: center;
 }
 
-form h1,form p {
-  color: white;
-  font-weight: 500;
+.container form input[type="text"],
+.container form input[type="password"] {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
 }
 
-form p {
-  font-size: 10px;
-}
-
-form input[type = "id"],form input[type = "password"] {
-  border: 0;
-  background: none;
-  display: block;
-  margin: 20px auto;
-  border: 2px solid #ff69b4;
-  padding: 15px 10px;
-  width: 200px;
-  outline: none;
-  border-radius: 24px;
-  transition: 0.25s;
-  text-align: center;
-}
-
-form input[type = "id"]:focus,form input[type = "password"]:focus {
-  width: 280px;
-  background-color: #f0f8ff;
-}
-
-form input[type = "submit"]{
-  border: 0;
-  background: none;
-  display: block;
-  margin: 20px auto;
-  border: 2px solid #f0f8ff;
-  padding: 15px 10px;
-  width: 200px;
-  outline: none;
-  color: white;
-  border-radius: 25px;
-  transition: 0.25s;
-  text-align: center;
+.container form input[type="submit"] {
+  width: 100%;
+  padding: 10px;
+  border: none;
+  border-radius: 4px;
+  background-color: #4CAF50;
+  color: #fff;
   cursor: pointer;
 }
 
-form input[type = "submit"]:hover {
-  background-color: #ff69b4;
-  border: 2px solid #ff69b4;
+.container form input[type="submit"]:hover {
+  background-color: #45a049;
 }
