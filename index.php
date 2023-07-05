@@ -35,15 +35,14 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     <link rel="stylesheet" href="stylesheet.css">
 </head>
 <body>
-    <h1>ログイン</h1>
+    <div class="main"> 
     <form method="POST" action="">
-        <label for="username">ユーザー名:</label>
-        <input type="text" id="username" name="username" required><br>
-
-        <label for="password">パスワード:</label>
-        <input type="password" id="password" name="password" required><br>
-
-        <input type="submit" value="ログイン">
+    <div class="id">ログインID</div>
+    <input type ="submit" value="ログイン" name="button"></input>
+    <div class="password">パスワード</div>
+    <input type="text" id="password" name="password"></input>
+    <input type="text" id="username" name="user"></input>
     </form>
+  </div>
 </body>
 </html>
